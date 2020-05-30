@@ -1,0 +1,13 @@
+Use follwing command to deploy the network stack:
+
+./create.sh UdagramNetworkStack Udagram_network.yml Udagram_network_parameters.json 
+
+and to deploy the server stack on top of it use:
+
+./create.sh UdagramServerStack Udagram_servers.yml Udagram_servers_parameters.json
+
+
+NOTE: Create servers after network stack shows COMPLETE status because server stack code make use of some vairbales which are exported at the end of network stack script.
+
+
+Working_URL: http://udagr-webap-19fhnwgofd26q-1813670919.eu-central-1.elb.amazonaws.com/
